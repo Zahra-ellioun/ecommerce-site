@@ -1,7 +1,10 @@
 import React from "react";
+import { DarkMode } from "../index";
+
+// icons
 import { IoMdSearch } from "react-icons/io";
 import { MdShoppingCart } from "react-icons/md";
-import { DarkMode } from "../index";
+import { FaCaretDown } from "react-icons/fa6";
 
 const MenuLinks = [
   {
@@ -29,6 +32,24 @@ const MenuLinks = [
   },
 ];
 
+const dropDownLinks = [
+  {
+    id: 1,
+    name: "Trending Products",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "Best Sellings",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "Top Rated",
+    link: "/#",
+  },
+];
+
 const Navbar = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 z-40 relative">
@@ -47,16 +68,44 @@ const Navbar = () => {
             <div className="hidden lg:block">
               <ul className="flex gap-x-4">
                 {MenuLinks.map((item) => (
-                  <li
-                    key={item.id}
-                    className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
-                  >
-                    <a href={item.link}>{item.name}</a>
+                  <li key={item.id} className="">
+                    <a
+                      className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
+                      href={item.link}
+                    >
+                      {item.name}
+                    </a>
                   </li>
                 ))}
+                <li className="relative cursor-pointer group">
+                  <a
+                    href="#"
+                    className="px-4 flex items-center gap-x-1 font-semibold text-gray-500 dark:hover:text-white"
+                  >
+                    Quick Links
+                    <span className="group-hover:rotate-180 duration-300">
+                      <FaCaretDown />
+                    </span>
+                  </a>
+                  <div className="absolute hidden group-hover:block w-[200px] z-[999] shadow-md rounded-md bg-white dark:bg-gray-900 p-2">
+                    <ul className="space-y-2">
+                      {dropDownLinks.map((item) => (
+                        <li key={item.id}>
+                          <a
+                            className="inline-block w-full font-semibold p-2 text-gray-500 dark:hover:text-white duration-200 hover:text-black hover:bg-primary/20 rounded-md"
+                            href={item.link}
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
+
           {/* navbar right section */}
           <div className="flex items-center gap-x-4">
             {/* searchbar */}

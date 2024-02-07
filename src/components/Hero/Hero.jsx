@@ -41,19 +41,47 @@ const Hero = () => {
     // slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
-    <div>
-      <div>
-        <Slider {...settings}>
-          {/* slide 1 */}
-          <div></div>
-          {/* slide 2 */}
-          <div></div>
-          {/* slide 3  */}
-          <div></div>
-        </Slider>
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 pb-4">
+      <div className="container">
+        <div className="rounded-3xl bg-gradient-to-br from-gray-300 to-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:to-gray-800">
+          <Slider {...settings}>
+            {HeroData.map((item) => (
+              <div
+                key={item.id}
+                className=" rounded-3xl flex items-center justify-center "
+              >
+                <div className=" flex flex-col-reverse sm:flex-row justify-between items-center my-8 sm:my-32 lg:my-28 xl:my-20 mx-14 min-h-[400px]">
+                  {/* text context */}
+
+                  <div className="space-y-4 sm:w-56 text-center sm:text-left">
+                    <h1 className="font-bold text-2xl sm:text-6xl lg:text-2xl ">
+                      {item.subtitle}
+                    </h1>
+                    <h1 className="font-bold text-5xl sm:text-6xl lg:text-7xl ">
+                      {item.title1}
+                    </h1>
+                    <h1 className="uppercase font-bold text-5xl sm:text-7xl xl:text-[150px] tracking-wide text-white dark:text-gray-700/50">
+                      {item.title2}
+                    </h1>
+                    <button className="px-8 py-2 rounded-full bg-primary hover:scale-110 duration-150 text-white">
+                      Shop By Categoury
+                    </button>
+                  </div>
+
+                  {/* img  */}
+                  <div className="w-[300px] lg:w-[450px] xl:w-[480px]">
+                    <img src={item.img} alt="" className="w-full " />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
 };
+
 export default Hero;

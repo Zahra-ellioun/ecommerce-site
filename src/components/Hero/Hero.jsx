@@ -71,8 +71,12 @@ const Hero = () => {
                   </div>
 
                   {/* img  */}
-                  <div className="w-[300px] lg:w-[450px] xl:w-[480px]">
-                    <img src={item.img} alt="" className="w-full " />
+                  <div>
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="w-[300px] sm:w-[450px] lg:w-[480px] sm:scale-105 lg:scale-110 object-contain drop-shadow-[-8px_4px_8px_rgba(0,0,0,.4)]"
+                    />
                   </div>
                 </div>
               </div>

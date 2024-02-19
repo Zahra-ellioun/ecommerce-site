@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image1 from "../../assets/Hero/headphone.png";
 import Image2 from "../../assets/Hero/vr.png";
 import Image3 from "../../assets/Hero/macbook.png";
+import { Button } from "..";
 
 const HeroData = [
   {
@@ -65,9 +66,11 @@ const Hero = () => {
                     <h1 className="uppercase font-bold text-5xl sm:text-7xl xl:text-[150px] tracking-wide text-white dark:text-gray-700/50">
                       {item.title2}
                     </h1>
-                    <button className="px-8 py-2 rounded-full bg-primary hover:scale-110 duration-150 text-white">
-                      Shop By Categoury
-                    </button>
+                    <Button
+                      text={"Shop By Category"}
+                      bgColor={"bg-primary"}
+                      textColor={"text-white"}
+                    />
                   </div>
 
                   {/* img  */}
@@ -75,7 +78,7 @@ const Hero = () => {
                     <img
                       src={item.img}
                       alt=""
-                      className="w-[300px] sm:w-[450px] lg:w-[480px] sm:scale-105 lg:scale-110 object-contain drop-shadow-[-8px_4px_8px_rgba(0,0,0,.4)]"
+                      className="w-[300px] sm:w-[450px] lg:w-[480px] sm:scale-105 lg:scale-120 object-contain drop-shadow-[-8px_4px_8px_rgba(0,0,0,.4)]"
                     />
                   </div>
                 </div>

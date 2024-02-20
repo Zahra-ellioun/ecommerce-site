@@ -9,7 +9,7 @@ import { Button } from "../index";
 
 const Category = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 pb-4">
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 py-6">
       <div className="container">
         {/* grid for category container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -64,7 +64,7 @@ const Category = () => {
             </div>
           </div>
           {/* grid item 3 */}
-          <div className="rounded-3xl bg-gradient-to-br from-primary to-primary/70 h-80 lg:col-span-2">
+          <div className="rounded-3xl bg-gradient-to-br from-primary to-primary/70 h-80 sm:col-span-2">
             {/* content flex */}
             <div className="h-full relative flex items-center sm:items-end">
               {/* text */}
@@ -85,12 +85,12 @@ const Category = () => {
               <img
                 src={macbook}
                 alt=""
-                className="h-72 sm:h-52 lg:h-72 object-cover absolute right-0 top-6"
+                className="h-72  lg:h-72 object-cover absolute right-0 top-6"
               />
             </div>
           </div>
           {/* grid item 4 */}
-          <div className="rounded-3xl bg-gradient-to-br from-gray-400 to-gray-400/50 h-80 lg:col-span-2">
+          <div className="rounded-3xl bg-gradient-to-br from-gray-400 to-gray-400/50 h-80 sm:col-span-2">
             {/* content flex */}
             <div className="h-full relative flex items-center sm:items-end">
               {/* text */}
@@ -109,7 +109,7 @@ const Category = () => {
               <img
                 src={gaming}
                 alt=""
-                className="h-64 sm:h-40 lg:h-64 object-cover absolute right-2 top-6"
+                className="h-64  lg:h-64 object-cover absolute right-2 top-6"
               />
             </div>
           </div>

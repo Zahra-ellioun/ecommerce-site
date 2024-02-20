@@ -18,14 +18,14 @@ const Category = () => {
             {/* content flex */}
             <div className="h-full relative flex items-center sm:items-end">
               {/* text */}
-              <div className="pl-6 py-5 space-y-1">
+              <div className="pl-5 py-10 space-y-1">
                 <p className="text-gray-300">Enjoy</p>
                 <p className="text-white font-bold text-2xl">With</p>
                 <p className="text-white/50 font-bold text-4xl pb-3">
                   Earphone
                 </p>
                 <Button
-                  text={"Browse"}
+                  text="Browse"
                   bgColor={"bg-primary"}
                   textColor={"text-white"}
                 />
@@ -116,7 +116,7 @@ const Category = () => {
           {/* grid item 5 */}
           <div className="rounded-3xl bg-gradient-to-br from-brandGreen to-brandGreen/70 h-80">
             {/* content flex */}
-            <div className="h-full relative flex items-center sm:items-start xl:items-center">
+            <div className="h-full relative flex items-center sm:items-start xl:items-center 2xl:items-end">
               {/* text */}
               <div className="pl-6 py-5 space-y-1">
                 <p className="text-gray-300">Enjoy</p>

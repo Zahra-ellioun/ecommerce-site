@@ -6,7 +6,7 @@ import { FaHeadphonesAlt } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 pt-10 pb-20">
+    <div className=" pt-10 pb-20">
       <div className="container">
         {/* grid container */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

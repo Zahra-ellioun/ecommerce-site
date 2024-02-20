@@ -9,7 +9,7 @@ import { Button } from "../index";
 
 const Category = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 py-6">
+    <div className=" py-6">
       <div className="container">
         {/* grid for category container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

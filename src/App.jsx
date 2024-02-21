@@ -4,13 +4,13 @@ import headphone from "./assets/Hero/headphone.png";
 
 const BannerData = {
   discount: "30% OFF",
-  titile: "Fine Smile",
+  title: "Fine Smile",
   date: "10 Jan to 28 Jan",
-  image: headphone,
-  title2: "Air SOlo Bass",
+  img: headphone,
+  title2: "Air Solo Bass",
   title3: "Winter Sale",
   title4:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit lorem, eget bibendum diam. ",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit lorem",
   bgColor: "#f42c37",
 };
 
@@ -21,7 +21,7 @@ const App = () => {
       <Hero />
       <Category />
       <Services />
-      <Banner />
+      <Banner data={BannerData} />
     </div>
   );
 };

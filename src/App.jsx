@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero, Navbar, Category, Services, Banner } from "./components";
+import headphone from "./assets/Hero/headphone.png";
 
 const BannerData = {
   discount: "30% OFF",

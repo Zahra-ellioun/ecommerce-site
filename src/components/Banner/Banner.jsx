@@ -2,11 +2,13 @@ import React from "react";
 import Button from "../Shared/Button";
 
 const Banner = ({ data }) => {
-  console.log(data.bgColor);
   return (
     <div className="py-20">
       <div className="container">
-        <div className={`bg-[${data.bgColor}] h-full rounded-3xl text-white`}>
+        <div
+          className="h-full rounded-3xl text-white"
+          style={{ backgroundColor: data.bgColor }}
+        >
           {/* flex container */}
           <div className="grid grid-cols-1 md:grid-cols-3 items-center">
             {/* part 1 */}

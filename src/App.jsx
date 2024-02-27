@@ -1,5 +1,12 @@
 import React from "react";
-import { Hero, Navbar, Category, Services, Banner } from "./components";
+import {
+  Hero,
+  Navbar,
+  Category,
+  Services,
+  Banner,
+  Products,
+} from "./components";
 import headphone from "./assets/Hero/headphone.png";
 
 const BannerData = {
@@ -22,6 +29,7 @@ const App = () => {
       <Category />
       <Services />
       <Banner data={BannerData} />
+      <Products />
     </div>
   );
 };

@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import darkModePic from "../../assets/darkMode/dark-mode-button.png";
 import { useState } from "react";
 import lightModePic from "../../assets/darkMode/light-mode-button.png";
+import useDarkMode from "../../custom-hooks/useDarkMode";
 
 const DarkMode = () => {
-  let [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
+  let [theme, setTheme] = useDarkMode();
 
   // access to html element
   const element = document.documentElement;
-  console.log(element);
+  // console.log(element);
 
   // set theme mode to local storage and add to html element
   useEffect(() => {

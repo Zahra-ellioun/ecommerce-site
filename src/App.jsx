@@ -20,7 +20,6 @@ const BannerData = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit lorem",
   bgColor: "#f42c37",
 };
-
 const App = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">

@@ -1,10 +1,10 @@
-import React from "react";
 import { DarkMode } from "../index";
 
 // icons
 import { IoMdSearch } from "react-icons/io";
 import { MdShoppingCart } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa6";
+import ScrollIndicator from "../Shared/ScrollIndicator";
 
 const MenuLinks = [
   {
@@ -53,9 +53,10 @@ const dropDownLinks = [
 const Navbar = () => {
   return (
     <div className=" z-40 relative">
-      <div className="py-4">
+      {/* header */}
+      <div className="py-4 ">
         {/* header container */}
-        <div className="container flex justify-between">
+        <div className="container flex justify-between pb-4">
           {/* logo and links section left side */}
           <div className="flex items-center gap-x-4">
             <a
@@ -130,6 +131,10 @@ const Navbar = () => {
               <DarkMode />
             </div>
           </div>
+        </div>
+        {/* scroll indicator */}
+        <div>
+          <ScrollIndicator />
         </div>
       </div>
     </div>

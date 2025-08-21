@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import darkModePic from "../../assets/darkMode/dark-mode-button.png";
-import { useState } from "react";
 import lightModePic from "../../assets/darkMode/light-mode-button.png";
 import useDarkMode from "../../custom-hooks/useDarkMode";
 

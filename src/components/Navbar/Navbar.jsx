@@ -4,7 +4,7 @@ import { DarkMode } from "../index";
 import { IoMdSearch } from "react-icons/io";
 import { MdShoppingCart } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa6";
-import ScrollIndicator from "../Shared/ScrollIndicator";
+import { ScrollIndicator } from "../index";
 
 const MenuLinks = [
   {

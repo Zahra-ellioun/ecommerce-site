@@ -8,3 +8,4 @@ export { default as Products } from "./Products/Products";
 export { default as ProductsCard } from "./Products/ProductsCard";
 export { default as Button } from "./Shared/Button";
 export { default as Heading } from "./Shared/Heading";
+export { default as ScrollIndicator } from "./Shared/ScrollIndicator";

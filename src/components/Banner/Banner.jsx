@@ -4,6 +4,7 @@ import Button from "../Shared/Button";
 const Banner = ({ data }) => {
   return (
     <div className="py-20">
+      {console.log(`text-[${data.bgColor}]`)}
       <div className="container">
         <div
           className="h-full rounded-3xl text-white"
@@ -37,7 +38,7 @@ const Banner = ({ data }) => {
               <Button
                 text={"Shop Now"}
                 bgColor={"bg-white"}
-                textColor={`text-[${data.bgColor}]`}
+                textColor={`text-[#f42c37]`}
               />
             </div>
           </div>

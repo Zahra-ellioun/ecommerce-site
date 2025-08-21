@@ -11,9 +11,8 @@ const ScrollIndicator = () => {
       const scrollHeightValue = document.documentElement.scrollHeight;
       const ClientHeightValue = document.documentElement.clientHeight;
       //   بدست اوردن درصد اسکرول شده
-      const scrollValue = Math.round(
-        (scrollTopValue / (scrollHeightValue - ClientHeightValue)) * 100
-      );
+      const scrollValue =
+        (scrollTopValue / (scrollHeightValue - ClientHeightValue)) * 100;
 
       setScrollWidth(scrollValue);
       console.log("مقدار اسکرول", scrollValue);
@@ -30,7 +29,7 @@ const ScrollIndicator = () => {
   return (
     <div className=" w-full h-2 bg-gray-400">
       <div
-        className="h-full bg-red-500"
+        className="h-full bg-red-500 duration-800 "
         style={{ width: `${scrollWidth}%` }}
       ></div>
     </div>

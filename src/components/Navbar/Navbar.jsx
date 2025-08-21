@@ -52,9 +52,9 @@ const dropDownLinks = [
 
 const Navbar = () => {
   return (
-    <div className=" z-40 relative">
+    <div className=" z-40 fixed top-0 right-0 left-0 bg-white ">
       {/* header */}
-      <div className="py-4 ">
+      <div className="pt-4 ">
         {/* header container */}
         <div className="container flex justify-between pb-4">
           {/* logo and links section left side */}
@@ -110,12 +110,12 @@ const Navbar = () => {
           {/* navbar right section */}
           <div className="flex items-center gap-x-4">
             {/* searchbar */}
-            <div className="relative hidden sm:block group">
+            <div className="relative hidden sm:block group ">
               <input
                 type="text"
                 placeholder="Search "
                 className="w-0 group-hover:w-[300px]
-                lg:group-hover:w-[150px] xl:group-hover:w-[300px] rounded-full group-hover:border group-hover:border-gray-600 duration-300 transition-all px-3 py-1 focus:outline-0 dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800"
+                lg:group-hover:w-[150px] xl:group-hover:w-[300px] rounded-full group-hover:border group-hover:border-gray-600 duration-300 transition-all px-3 py-1 focus:outline-0 dark:border-gray-800  group-hover:dark:bg-gray-800 "
               />
               <IoMdSearch className="text-xl text-gray-600 dark:text-gray-400 absolute right-3 top-1/2 -translate-y-1/2 group-hover:text-primary duration-200" />
             </div>
